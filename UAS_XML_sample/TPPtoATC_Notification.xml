@@ -1,0 +1,19 @@
+<message xmlns="http://www.fixm.aero/messaging/4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:ns2="http://www.fixm.aero/base/4.0" xmlns:ns3="http://www.fixm.aero/flight/4.0" 
+xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance http://www.fixm.aero/fixm/4.0/Fixm.xsd">
+    <messageDateTime timeReference="UTC"></messageDateTime>
+    <!--  And acknowledge status with a notification reason: notifies ATC of proposed flight. This will be sent simultaneously with a message of "accepted" to the operator.
+    -->
+    <ns3:flightPlanNegotiationStatus>
+        <ns3:planningStatus status="Acknowledge" statusReason="Notification"/>
+        <!-- OR <ns3:planningStatus status="Rejected" statusReason="part 107, rule 1: airspace class A. part 107 rule __: nighttime operation"> -->
+    </ns3:flightPlanNegotiationStatus>
+    <flight>
+        <!-- Contains information about departure/arrival times/locations and flight radius and location and time: full flight plan. And will contain the flight plan VERSION. Give the proper message IDs, message collection IDs, and flight plan versions.
+         -->
+    </flight>
+    <recipient> <!-- who gets the message: ATC --> </recipient>
+    <messageOriginator>  <!-- Information about who sent this message: TPP --> </messageOriginator>
+    <operatingOrganization> <!-- Information about UAS operator ... who is flying the UAS -->  </operatingOrganization>
+    <uniqueMessageIdentifier codeSpace=""/>
+</message>

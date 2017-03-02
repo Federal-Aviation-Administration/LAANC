@@ -1,0 +1,17 @@
+<message xmlns="http://www.fixm.aero/messaging/4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:ns2="http://www.fixm.aero/base/4.0" xmlns:ns3="http://www.fixm.aero/flight/4.0" 
+xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance http://www.fixm.aero/fixm/4.0/Fixm.xsd">
+    <messageDateTime timeReference="UTC"></messageDateTime>
+    <ns3:flightPlanNegotiationStatus>
+        <ns3:planningStatus status="Reject" statusReason="">
+        </ns3:planningStatus>
+    </ns3:flightPlanNegotiationStatus>
+    <flight>
+        <!-- Full flight plan not returned to TPP, only the flight plan version. Give the proper message IDs, message collection IDs, and flight plan versions.
+         -->
+    </flight>
+    <recipient> <!-- who gets the message: ATC --> </recipient>
+    <messageOriginator>  <!-- Information about who sent this message: TPP --> </messageOriginator>
+    <operatingOrganization> <!-- Information about UAS operator ... who is flying the UAS -->  </operatingOrganization>
+    <uniqueMessageIdentifier codeSpace=""/>
+</message>

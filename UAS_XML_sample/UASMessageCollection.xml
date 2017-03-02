@@ -1,0 +1,48 @@
+<messageCollection xmlns="http://www.fixm.aero/messaging/4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:ns2="http://www.fixm.aero/base/4.0" xmlns:ns3="http://www.fixm.aero/flight/4.0" 
+xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance http://www.fixm.aero/fixm/4.0/Fixm.xsd">
+<uniqueMessageIdentifier codeSpace=""/>
+<!-- Message 1: flight plan proposal, see Appendix A.1 -->
+<message>
+    <messageDateTime timeReference="UTC"></messageDateTime>
+    <ns3:flightPlanNegotiationStatus> ... </ns3:flightPlanNegotiationStatus>
+    <flight>
+        <!-- Contains information about departure/arrival times/locations and flight radius and location and time. -->
+    </flight>
+    <recipient> <!-- who gets the message --> </recipient>
+    <messageOriginator>  <!-- Information about who sent this message --> </messageOriginator>
+    <operatingOrganization> <!-- Information about UAS operator ... who is flying the UAS -->  </operatingOrganization>
+    <uniqueMessageIdentifier codeSpace=""/>
+</message>
+<!-- Message 2: notification of flight to FAA/ATC. See Appendix A.3 -->
+
+<message>
+    <messageDateTime timeReference="UTC"></messageDateTime>
+    <ns3:flightPlanNegotiationStatus> ... </ns3:flightPlanNegotiationStatus>
+    <flight>
+        <!-- Contains information about departure/arrival times/locations and flight radius and location and time. -->
+    </flight>
+    <recipient> <!-- who gets the message --> </recipient>
+    <messageOriginator>  <!-- Information about who sent this message --> </messageOriginator>
+    <operatingOrganization> <!-- Information about UAS operator ... who is flying the UAS -->  </operatingOrganization>
+    <uniqueMessageIdentifier codeSpace=""/>
+</message>
+<!-- Message 3: TPP notification of acceptance of flight plan to operator. See Appendix A.2 -->
+
+<message>
+    <messageDateTime timeReference="UTC"></messageDateTime>
+    <ns3:flightPlanNegotiationStatus> ... </ns3:flightPlanNegotiationStatus>
+    <flight>
+
+        <!-- Contains information about departure/arrival times/locations and flight radius and location and time. -->
+
+    </flight>
+    <recipient> <!-- who gets the message --> </recipient>
+    <messageOriginator>  <!-- Information about who sent this message --> </messageOriginator>
+    <operatingOrganization> <!-- Information about UAS operator ... who is flying the UAS -->  </operatingOrganization>
+
+    <uniqueMessageIdentifier codeSpace=""/>
+
+</message>
+<!-- End of message collection. Flight plan approved. -->
+</messageCollection>

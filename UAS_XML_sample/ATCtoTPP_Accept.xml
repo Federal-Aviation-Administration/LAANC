@@ -1,0 +1,26 @@
+<message xmlns="http://www.fixm.aero/messaging/4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:ns2="http://www.fixm.aero/base/4.0" xmlns:ns3="http://www.fixm.aero/flight/4.0" 
+xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance http://www.fixm.aero/fixm/4.0/Fixm.xsd">
+    <messageDateTime timeReference="UTC"></messageDateTime>
+    <ns3:flightPlanNegotiationStatus>
+        <ns3:planningStatus status="Accept" statusReason="Waiver granted for part 107 rule ___.">
+        </ns3:planningStatus>
+    </ns3:flightPlanNegotiationStatus>
+    <flight>
+        <!-- Full flight plan not returned to TPP, only the flight plan version. Give the proper message IDs, message collection IDs, and flight plan versions.
+         -->
+    </flight>
+    <recipient> <!-- who gets the message: TPP --> </recipient>
+    <messageOriginator>  <!-- Information about who sent this message: ATC --> </messageOriginator>
+    <operatingOrganization> <!-- Information about UAS operator ... who is flying the UAS. With ATC authorization, the permissions section here can be updated once the TPP notifies the operator in the next step, or the ATC can update the permissions now. The first case is covered in Appendix A.2 -->  
+           <ns2:permissions>
+               <ns2:permissionWaiverID>____</ns2:permissionWaiverID>
+               <ns2:permissionWaiverSignatory>____</ns2:permissionWaiverSignatory>
+               <ns2:permissionAcceptDate></ns2:permissionAcceptDate>
+               <ns2:permissionStartDate></ns2:permissionStartDate>
+               <ns2:permissionEndDate></ns2:permissionEndDate>
+               <ns2:speedWaiver xsi:type="waiverType">True</ns2:speedWaiver>
+           </ns2:permissions>
+    </operatingOrganization>
+    <uniqueMessageIdentifier codeSpace=""/>
+</message>

@@ -1,0 +1,30 @@
+<message xmlns="http://www.fixm.aero/messaging/4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:ns2="http://www.fixm.aero/base/4.0" xmlns:ns3="http://www.fixm.aero/flight/4.0" 
+xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance http://www.fixm.aero/fixm/4.0/Fixm.xsd">
+    <messageDateTime timeReference="UTC"></messageDateTime>
+    <ns3:flightPlanNegotiationStatus>
+        <ns3:planningStatus status="Accepted" statusReason=""/>
+        <!-- OR <ns3:planningStatus status="Rejected" statusReason="part 107, rule 1: airspace class A. part 107 rule __: nighttime operation"/> →
+        <!-- OR <ns3:planningStatus stauts="Rejected" statusReason=""/> — this means that no modification will get a waiver. -->
+    </ns3:flightPlanNegotiationStatus>
+    <flight>
+        <!-- Specifically, will contain the flight plan VERSION. No need to reiterate the entire flight plan. This saves space and prevents bloat in order to improve readability. A relational database should have no problems, given the proper message IDs, message collection IDs, and flight plan versions. -->
+    </flight>
+    <recipient>
+        <!-- who gets the message: operator, specified in operating oranization, or the official contact for this flight plan. →
+    </recipient>
+    <messageOriginator>  <!-- Information about who sent this message: TPP --> </messageOriginator>
+    <operatingOrganization>
+        <!-- Information about UAS operator ... who is flying the UAS. If the status is Accepted after ATC has granted a waiver, the operatingOrganization field will be updated. An example is as follows:
+        -->
+        <ns2:permissions>
+           <ns2:permissionWaiverID>____</ns2:permissionWaiverID>
+           <ns2:permissionWaiverSignatory>____</ns2:permissionWaiverSignatory>
+           <ns2:permissionAcceptDate></ns2:permissionAcceptDate>
+           <ns2:permissionStartDate></ns2:permissionStartDate>
+           <ns2:permissionEndDate></ns2:permissionEndDate>
+           <ns2:speedWaiver xsi:type="waiverType">True</ns2:speedWaiver>
+       </ns2:permissions>
+    </operatingOrganization>
+    <uniqueMessageIdentifier codeSpace=""/>
+</message>

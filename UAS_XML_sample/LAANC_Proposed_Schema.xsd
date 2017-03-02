@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema
+   attributeFormDefault="unqualified"
+   elementFormDefault="qualified"
+   targetNamespace="http://www.fixm.aero/base/4.0"
+   version="4.0.0"
+   xmlns="http://www.w3.org/2001/XMLSchema"
+   xmlns:fb="http://www.fixm.aero/base/4.0"
+   xmlns:fx="http://www.fixm.aero/flight/4.0"
+   xmlns:mesg="http://www.fixm.aero/messaging/4.0"
+   xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   
+   <annotation>
+      <documentation>
+	     Here, we include the standard documentation shown in the other FIXM core schemata. The following schema contains proposed extensions to the FIXM core. Some of the schema may be placed within existing schema (e.g., messaging, flight, or base). We will propose a placement for all of the new data classes within each data class' annotation.
+		 
+		 This is draft document. We will elicit contributions and comments on the implementation of UASs within the FIXM core schemata. 
+	  </documentation>
+   </annotation>
+   <import namespace="http://www.fixm.aero/base/4.0" schemaLocation="./../base/Base.xsd"/>
+   <import namespace="http://www.fixm.aero/flight/4.0" schemaLocation="./../flight/Flight.xsd"/>
+   <annotation>
+      <documentation>
+         Defines elements needed to support UAS messaging...
+      </documentation>
+   </annotation>
+   <complexType abstract="True" name="permissions">
+      <annotation>
+	     <documentation>
+		    Here we define the prior permissions data class. This includes when the authorization/waiver was granted, who granted the authorization, and over which dates/times the authorization is active. It must also include which rule the authorization is for by including the appropriate IndicatorType.
+		 </documentation>
+	  </annotation>
+	  <sequence>
+	     <element name="extensions" type="fb:ExtensionType" minOccurs="0" maxOccurs="unbounded">
+		    <annotation>
+			   <documentation>
+			      Allow to add or redefine the Message elements and create regional scope extensions. 
+                  This approach is not recommended, however as the preferred method is to extend individual 
+                  classes and replace the core classes where appropriate as described in the FIXM Modeling 
+                  Best Practices Guide. [FIXM]
+			   </documentation>
+			</annotation>
+		 </element>
+		 <element name="airspaceClassPermission" type="fb:airspaceClassType" minOccurs="0" maxOccurs="1">
+		    <annotation>
+			   <documentation>
+			      The airspace classification of a given geographical position and altitude. May be determined with FAA-approved ArcGIS shape files or appropriate airspace charts.
+			   </documentation>
+			</annotation>
+		 </element>
+		 
+		 <element name="permissionWaiverID" type="fb:WaiverIDType" minOccurs="1" maxOccurs="1">
+		    <annotation>
+			   <documentation>
+			      Each waiver/authorization is assigned a unique ID.
+			   </documentation>
+			</annotation>
+		 </element>
+		 
+		 <element name="permissionAcceptDate" type="fb:TimeType" minOccurs="1" maxOccurs="1">
+		    <annotation>
+			   <documentation>
+			      The date and time authorization/waiver was accepted.
+			   </documentation>
+			</annotation>
+		 </element>
+		 
+		 <element name="permissionStartDate" type="fb:TimeType" minOccurs="1" maxOccurs="1">
+		    <annotation>
+			   <documentation>
+			      The date and time the authorization/waiver takes effect.
+			   </documentation>
+			</annotation>
+		 </element>
+		 
+		 <element name="permissionEndDate" type="fb:TimeType" minOccurs="1" maxOccurs="1">
+		    <annotation>
+			   <documentation>
+			      The date and time the authorization/waiver ends.
+			   </documentation>
+			</annotation>
+		 </element>
+		 
+		 <element name="operationOverPeopleIndicator" type="fb:IndicatorType" minOccurs="0" maxOccurs="1">
+		    <annotation>
+		      <documentation>
+			     A boolean indicating whether permission to fly over people is granted. See part 107 for the description of how "over people" is determined.
+			  </documentation>
+		    </annotation>
+		 </element>
+		 
+		 <element name="altitudeIndicator" type="fb:IndicatorType" minOccurs="0" maxOccurs="1">
+		    <annotation>
+			   <documentation>
+			      A boolean indicating whether permission to fly above 400 feet is granted. See part 107 for reference to the 400 feet value.
+			   </documentation>
+			</annotation>
+		 </element>
+		 
+		 <element name="VLOSIndicator" type="fb:IndicatorType" minOccurs="0" maxOccurs="1">
+		    <annotation>
+			   <documentation>
+			      A boolean indicating whether permission to fly beyond visible line-of-sight (VLOS) of the operator is granted. See part 107 rules for the exact definition of the operator VLOS.
+			   </documentation>
+			</annotation>
+		 </element>
+		 
+		 <element name="speedWaiver" type="fb:IndicatorType" minOccurs="0" maxOccurs="1">
+		    <annotation>
+			   <documentation>
+			      A boolean indicating whether permission to fly faster than 100 mph. See part 107 for an explanation of the ground speed requirements.
+			   </documentation>
+			</annotation>
+		 </element>
+		 
+		 <element name="nightTimeWaiver" type="fb:IndicatorType" minOccurs="0" maxOccurs="1">
+		    <annotation>
+			   <documentation>
+			      A boolean indicating whether the permission to fly during night time is granted (between the hours of [evening] twilight and [morning] twilight).
+			   </documentation>
+			</annotation>
+		 </element>
+	  </sequence>
+   </complexType>
+	  
+	  
+	  
+   <simpleType name="WaiverIDType">
+	  <annotation>
+		 <documentation>
+			Unique identifier for authorization/waiver.
+         </documentation>
+      </annotation>
+      <restriction base="fb:CharacterStringType"/>
+   </simpleType>
+   
+   <simpleType name="airspaceClassType">
+      <annotation>
+	     <documentation>
+		    Airspace classifications: A, B, C, D, E, G, R. "R" represents restricted airspace.
+		 </documentation>
+	  </annotation>
+	  <restriction base="fb>CharacterStringType">
+	     <minLength value="1"/>
+         <maxLength value="1"/>
+         <pattern value="([A-Z])"/>
+      </restriction>
+   </simpleType>
+
+   <simpleType name="IndicatorType">
+       <annotation>
+	      <documentation>
+		     Boolean variable used to indicate whether or not a permission is granted.
+		  </documentation>
+	   </annotation>
+	   <restriction base="xs:Boolean"/>
+   </simpleType>
+</schema>

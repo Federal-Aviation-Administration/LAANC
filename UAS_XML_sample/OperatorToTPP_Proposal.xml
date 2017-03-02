@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- In order to determine the airspace permissions, we need airspace codes and aircraft 4D location: latitude, longitude, altitude, and time. Only comment needs to be:  -->
+<message xmlns="http://www.fixm.aero/messaging/4.0"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:ns2="http://www.fixm.aero/base/4.0" xmlns:ns3="http://www.fixm.aero/flight/4.0"
+   xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance http://www.fixm.aero/fixm/4.0/Fixm.xsd">
+   
+<metadata>
+   <gumi>urn:fixm.aero:asa:ods:20130203T022530:000001</gumi>
+</metadata>
+ <messageDateTime timeReference="UTC"></messageDateTime>
+<flight>
+   <ns3:gufi>au.asa.20130203T022530a.000001</ns3:gufi>
+   <ns3:activeFlightPlan ns3:flightPlanIdentifier="1">
+       <ns3:aircraftIdentity>
+           <ns3:acid>FFFF</ns3:acid>
+       </ns3:aircraftIdentity>
+       <ns3:aircraftDescription>
+           <ns3:capabilities ns3:standard="STANDARD">
+               <ns3:communication>
+                   <ns3:communicationCodes>N</ns3:communicationCodes>
+                   <ns3:dataLinkCodes></ns3:dataLinkCodes>
+                   <ns3:selectiveCallingCodes></ns3:selectiveCallingCodes>
+               </ns3:communication>
+                <ns3:surveillance>
+                   <ns3:surveillanceCodes>N</ns3:surveillanceCodes>
+               </ns3:surveillance>
+               <ns3:navigation>
+                   <ns3:navigationCodes>N</ns3:navigationCodes>
+                   <ns3:performanceBasedCodes></ns3:performanceBasedCodes>
+               </ns3:navigation>
+           </ns3:capabilities>
+           <ns3:registration>___</ns3:registration>
+               <!-- aircraftCategory is new. The make/model of a UAS must be
+                       included in a waiver request. It is provided here under
+                       the aircraft description.
+               -->
+           <ns3:aircraftCategory>
+               <ns3:model>___</ns3:model>
+               <ns3:manufacture>___</ns3:manufacture>
+           </ns3:aircraftCategory>
+       </ns3:aircraftDescription>
+       <ns3:formationAircraftCount>1</ns3:formationAircraftCount>
+       <ns3:filing>
+           <ns3:accepted>ACCEPTED</ns3:accepted>
+           <ns3:filingTime>2013-02-03T02:25:30.890Z</ns3:filingTime>
+       </ns3:filing>
+       <ns3:departure>
+       <!-- Already included in FIXM: reference Aerodrome. This includes
+               geographical location of reference point (nearest aerodrome)
+               and the distance between reference point and operator.
+        -->
+           <ns2:OtherReference iataDesignator="" name="">
+               <ns2:referencePoint>
+                   <ns2:distance uom="FT">__</ns2:distance>
+                   <ns2:pos>__ __</ns2:pos>
+               </ns2:referencePoint>
+           </ns2:OtherReference>
+          <ns3:estimatedDepartureTime>
+               2013-02-02T04:00:00.000Z
+           </ns3:estimatedDepartureTime>
+       </ns3:departure>
+       <ns3:arrival>
+           <ns3:estimatedArrivalTime>
+               2013-02-02T05:00:00.000Z
+           </ns3:estimatedArrivalTime>
+       </ns3:arrival>
+       <ns3:route>
+           <ns3:text>2704N11627W</ns3:text>
+           <ns3:segment xsi:type="ns3:BasicSegmentType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+               <ns3:level>
+                   <ns3:altitude ref="SFC" uom="FT">200</ns3:altitude>
+               </ns3:level>
+               <ns3:airspeed uom="KM_H">10</ns3:airspeed>
+               <ns3:airway xsi:nil="true"/>
+               <ns3:point>
+                   <ns2:location srsName="urn:ogc:def:crs:EPSG::4326">
+                       <!-- How many decimal places are valid? Is there a standard? -->
+                       <ns2:pos>27.066667 -116.453328</ns2:pos>
+                   </ns2:location>
+               </ns3:point>
+               <!-- Proposed extension specifies the flight radius. When
+                       combined with the altitude, this forms an semi-
+                       ellipsoid, centered at ground level.
+               -->
+               <ns3:flightRadius uom="FT">200</ns3:flightRadius>
+               <!-- Proposed extension is the "airClass" attribute to the
+                       region class. This specifies the airspace classification
+                       of the proposed flight, and helps determine the
+                       accept/reject status of the proposed flight.
+               -->
+               <ns3:region airClass="G"></ns3:region>
+               <fx:VLOSIndicator>True</ns3:VLOSIndicator>
+               <fx:operationOverPeople>True/False</fx:operationOverPeople>
+
+           </ns3:segment>
+       </ns3:route>
+       <ns3:flightType>SCHEDULED</ns3:flightType>
+   </ns3:activeFlightPlan>
+   <version>
+       <aspFlightPlanVersion><!-- Unique ID for flight plan. Given by ASP. --> </aspFlightPlanVersion>
+       <auFlightPlanVersion><!-- Unique ID for flight plan. Given by airspace user (operator). --> </auFlightPlanVersion>
+   </version>
+</flight>
+</message>
+<recipient>
+     <!-- who gets the message. See contact, under operating Organization. Recipient = TPP →
+</recipient>
+<messageOriginator>
+    <!-- Information about who sent this message. See contact, under operating Organization. Originator = operating organization. →
+</messageOriginator>
+<ns3:operatingOrganization>
+   <!-- UAS Operator class, includes the operator class code and the
+           type and the respective descriptions.
+   -->
+   <ns2:UASOperator>
+       <ns2:classCode ns2:uasCode="">Description</ns2:classCode>
+       <ns2:uasOperatorType ns2:uasType="">Description</ns2:uasOperatorType>
+   </ns2:UASOperator>
+   <ns2:contact name="B" title="Dr.">
+       <ns2:address>
+           <ns2:administrativeArea>STATE/PROVINCE</ns2:administrativeArea>
+           <ns2:city>CITY NAME</ns2:city>
+           <ns2:countryCode>USA</ns2:countryCode>
+           <ns2:countryName>United States of America</ns2:countryName>
+           <ns2:deliveryPoint>StreetAddress</ns2:deliveryPoint>
+           <ns2:postalCode>10001</ns2:postalCode>
+       </ns2:address>
+       <ns2:onlineContact>
+           <ns2:email>___@ata-llc.com</ns2:email>
+       </ns2:onlineContact>
+       <ns2:phoneFax>
+           <ns2:voice>PhoneNumber</ns2:voice>
+       </ns2:phoneFax>
+   </ns2:contact>
+   <!-- Proposed extension to operatingOrganization or organization class
+       (or both): permissions. This lists the permissions the organization
+       already has. This helps determine the accept/reject status of the
+       proposed flight.
+   -->
+    <!-- If, for example, the operator has a overPeople waiver, the following
+                 permission would be granted.
+    -->
+    <ns2:permissions>
+       <ns2:permissionWaiverID>____</ns2:permissionWaiverID>
+       <ns2:permissionWaiverSignatory>____</ns2:permissionWaiverSignatory>
+       <ns2:permissionAcceptDate></ns2:permissionAcceptDate>
+       <ns2:permissionStartDate></ns2:permissionStartDate>
+       <ns2:permissionEndDate></ns2:permissionEndDate>
+       <ns2:operationOverPeople xsi:type="waiverType">True</ns2:operationOverPeople>
+   </ns2:permissions>
+</ns3:operatingOrganization>
+<uniqueMessageIdentifier codeSpace=""/>
+</FlightMessage>
