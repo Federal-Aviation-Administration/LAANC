@@ -174,7 +174,7 @@ Table of Contents
 
 5 [Appendix A Example FIXM messages](#appendix-a-example-fixm-messages)
 
-5.1 [A.1 Operator to TPP Proposed Flight Plan](#a.1-operator-to-tpp-proposed-flight-plan)
+5.1 [A.1 Operator to TPP Proposed Flight Plan](#a1-operator-to-tpp-proposed-flight-plan)
 
 5.2 [A.2 TPP to Operator: Accept/Reject](#a.2-tpp-to-operator-accept-reject)
 
