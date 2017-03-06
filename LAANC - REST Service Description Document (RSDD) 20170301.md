@@ -148,47 +148,47 @@ Table of Contents
 
 4.2 [Service Interfaces & Data Model](#service-interfaces-&-data-model)
 
-4.2.1 Resources 14
+4.2.1 [Resources](#resources)
 
-4.2.2 Methods 16
+4.2.2 [Methods](#methods)
 
-4.2.3 Resource Representations 17
+4.2.3 [Resource Representations](#resource-representation)
 
-4.2.3.1 &lt;Resource Name&gt; 17
+4.2.3.1 [Resource Name](#resource-name)
 
-4.2.4 Sample Payloads 17
+4.2.4 [Sample Payloads](#sample-payloads)
 
-4.2.4.1 &lt;Sample Payload 1&gt; 17
+4.2.4.1 [Sample Payload](#sample-payload)
 
-4.3 Service Implementation 19
+4.3 [Service Implementation](#service-implementation)
 
-4.3.1 Endpoints 19
+4.3.1 [Endpoints](#endpoints)
 
-4.3.1.1 &lt;Endpoint 1 Name&gt; 20
+4.3.1.1 [Endpoint 1 Name](#endpoint-1-name)
 
-4.3.1.1.1 Supported Data Formats 20
+4.3.1.1.1 [Supported Data Formats](#supported-data-formats)
 
-4.3.1.1.2 Network Address 20
+4.3.1.1.2 [Network Address](#network-address)
 
-4.3.1.1.3 End Point-Specific Qualities of Service 20
+4.3.1.1.3 [End Point-Specific Qualities of Service](#end-point-specific-qualities-of-service)
 
-5 Appendix A Example FIXM messages 20
+5 [Appendix A Example FIXM messages](#appendix-a-example-fixm-messages)
 
-5.1 A.1 Operator to TPP: Proposed Flight Plan 20
+5.1 [A.1 Operator to TPP: Proposed Flight Plan](#a.1-operator-to-tpp-proposed-flight-plan)
 
-5.2 A.2 TPP to Operator: Accept/Reject. 25
+5.2 [A.2 TPP to Operator: Accept/Reject](#a.2-tpp-to-operator-accept-reject)
 
-5.3 A.3 TPP to ATC: Notification 26
+5.3 [A.3 TPP to ATC: Notification](#a.3-tpp-to-atc-notification)
 
-5.4 A.4 TPP to ATC: Authorization Request 27
+5.4 [A.4 TPP to ATC: Authorization Request](#a.4-tpp-to-atc-authorization-request)
 
-5.5 A.5 ATC to TPP: Accept – Authorization Granted 28
+5.5 [A.5 ATC to TPP: Accept – Authorization Granted](#a.5-atc-to-tpp-accept-authorization)
 
-5.6 A.6 ATC to TPP: Reject with Minor Modifications 29
+5.6 [A.6 ATC to TPP: Reject with Minor Modifications](#a.6-atc-to-tpp-reject-with-minor-modifications)
 
-5.7 A.7 ATC to TPP: Reject 30
+5.7 [A.7 ATC to TPP: Reject](#a.7-atc-to-tpp-reject)
 
-6 Appendix B Message Collections 30
+6 [Appendix B Message Collections](#appendix-b-message-collections)
 
 ## Scope
 =====
