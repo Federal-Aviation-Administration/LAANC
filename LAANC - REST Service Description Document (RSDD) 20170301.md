@@ -522,7 +522,7 @@ the FIXM base namespace, and fx refers to the FIXM flight namespace.
 Setting these references can be found in the appendices, where (ns2 =
 fb) and (ns3 = fx).
 
-####### lat lon
+###### lat lon
 
 []{#_Toc475620574 .anchor}Specify a flight route as a single segment
 with a single point of reference
@@ -552,7 +552,7 @@ point4D or trajectoryPoint4D. The 4D point specifies the latitude,
 longitude, altitude, and time. These data may also be specified
 elsewhere.
 
-####### Time
+###### Time
 
 Covers planned launch/landing times.
 
@@ -562,7 +562,7 @@ Covers planned launch/landing times.
 
 Inputs are dateTime objects in Greenwich Mean Time.
 
-####### Altitude
+###### Altitude
 
 &lt;fx:level&gt;
 
@@ -575,7 +575,7 @@ level, STD = barometric altitude from standard 1 atm pressure, and W84 =
 height above WGS84 ellipsoid) and uom (Unit Of Measure; can be “FT” or
 “M”) attributes are required.
 
-####### Proposal Submission Date
+###### Proposal Submission Date
 
 When the proposal was submitted. The accepted class is a receipt that
 the ATC received the proposal.
@@ -592,7 +592,7 @@ Accepted field may be “ACCEPTED”, “REJECTED”, or “MANUAL”. The last
 choice represents a negotiation between the operator and air traffic
 control. The filingTime field must be a datetime object.
 
-####### Proposal FAA Response Time
+###### Proposal FAA Response Time
 
 &lt;fx:flightPlanNegotiationStatus&gt;
 
@@ -615,7 +615,7 @@ air traffic control or a third party provider. If so, then statusReason
 may simply quote the regulations violated by the flight plan, and the
 result will require the operator to submit a revised flight plan.
 
-####### Closest Airport
+###### Closest Airport
 
 Use the nearest airport as a reference point in departure aerodrome. We
 assume arrival aerodrome is the same as the departure; only the time
@@ -637,7 +637,7 @@ UASs flying within 5 miles of an airport require notification (not
 necessarily authorization). May also be used to determine the message
 recipient.
 
-####### Flight Plan Version
+###### Flight Plan Version
 
 The flight plan version, which may go under the "flight" data class,
 details the version of the flight plan under consideration. This allows
@@ -660,7 +660,7 @@ ASP = ?, AU = airspace user. Only one or the other need to be given; the
 TPP may be considered an ASP for these purposes when relaying messages
 to/from ATC and the operator.
 
-####### Proposed Speed
+###### Proposed Speed
 
 The proposed (maximum) speed of the flight.
 
@@ -685,7 +685,7 @@ objects for planningStatus and operationalAcceptability, which give
 reasons for the status of the proposed route and the status of the
 message, respectively.
 
-####### Planning Status
+###### Planning Status
 
 This class is optional, and outlines the status of the message. This is
 depreciated in favor of 5.1.3b. 
@@ -697,7 +697,7 @@ statusReason is a string of indeterminate length explaining the status.
 It will be necessary for a 'Reject' status. A reason may or may not be
 given for an acknowledge/accept message.
 
-####### Operational Acceptability
+###### Operational Acceptability
 
 This class is for a response to a proposed flight plan and outlines the
 status of the proposed flight plan.
@@ -734,7 +734,7 @@ In this document, we do not give the XML schema which will define these
 data types. However, we give sample XML code and potential inputs which
 help clarify the necessary data types and their relationships.
 
-####### Permissions
+###### Permissions
 
 Class, within operator details -- specifies previous permissions held.
 This is an optional class, and there can be any number of permissions
@@ -786,7 +786,7 @@ airspaceClassPermission (character: B, C, D, E, G), overPeople
 (boolean), altitudeWaiver (boolean), VLOSwaiver (boolean), speedWaiver
 (boolean).
 
-####### UAS operator
+###### UAS operator
 
 Class: covers the operator class code and operator type, specified in
 LAANC data model.
@@ -806,7 +806,7 @@ HOBBYIST, or OTHER. The OTHER would require a description, COMMERCIAL
 would also require a description, and PUBLIC and HOBBYIST would not
 require a description.
 
-####### Air Class
+###### Air Class
 
 Attribute, within the region class. Points may have FAA designations to
 help identify where the aircraft is. Now, each point also has an
@@ -821,7 +821,7 @@ restricted, ‘T’ temporarily unrestricted for certain types of activity
 location designation (e.g., airport code) and accepts
 CharacterStringType.
 
-####### Flight Radius
+###### Flight Radius
 
 Class. A proposed flight may only fly up to 400 ft (without a waiver),
 however, the average person can technically resolve a 2 ft object at
@@ -836,7 +836,7 @@ define two distances (altitude \[vertical\] & flight radius
 
 Unit of measure = feet or meters, specify. Input is a lengthType.
 
-####### VLOS Indicator
+###### VLOS Indicator
 
 A proposed flight is required to operate within visible line-of-sight of
 the operator. This data is a boolean, indicating whether the operator
@@ -845,7 +845,7 @@ FALSE, then the ATC may grant a waiver after clarifications.
 
 &lt;fx:VLOSIndicator&gt;True/False&lt;/ns3:VLOSIndicator&gt;
 
-####### Operation over people indicator
+###### Operation over people indicator
 
 A proposed flight is not allowed to operate over people (though I do not
 know what the actual definition is). The datum is a boolean, indicating
