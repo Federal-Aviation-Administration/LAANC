@@ -106,7 +106,7 @@ Table of Contents
 
 4.1.8.1.1.2 [Flight plan](#flight-plan)
 
-4.1.8.1.1.2.1 [lat/lon](#lat-lon)
+4.1.8.1.1.2.1 [lat-lon](#lat-lon)
 
 4.1.8.1.1.2.2 [Time](#time)
 
@@ -685,7 +685,7 @@ objects for planningStatus and operationalAcceptability, which give
 reasons for the status of the proposed route and the status of the
 message, respectively.
 
-####### planningStatus
+####### Planning Status
 
 This class is optional, and outlines the status of the message. This is
 depreciated in favor of 5.1.3b. 
@@ -697,7 +697,7 @@ statusReason is a string of indeterminate length explaining the status.
 It will be necessary for a 'Reject' status. A reason may or may not be
 given for an acknowledge/accept message.
 
-####### operationalAcceptability
+####### Operational Acceptability
 
 This class is for a response to a proposed flight plan and outlines the
 status of the proposed flight plan.
@@ -709,7 +709,7 @@ statusReason is a string of indeterminate length explaining the status.
 It will be necessary for a 'Reject' status. A reason may or may not be
 given for an acknowledge/accept message.
 
-##### 5.2. Data not yet covered in FIXM
+##### Data not yet covered in FIXM
 
 -   Operator: UAS class/code, descriptions
 
@@ -806,7 +806,7 @@ HOBBYIST, or OTHER. The OTHER would require a description, COMMERCIAL
 would also require a description, and PUBLIC and HOBBYIST would not
 require a description.
 
-####### airClass
+####### Air Class
 
 Attribute, within the region class. Points may have FAA designations to
 help identify where the aircraft is. Now, each point also has an
@@ -975,7 +975,7 @@ This section define how each resource is represented.
 &lt;For each resource for the service, include a subsection below
 describing the resource representation.&gt;
 
-#### &lt;Resource Name&gt;
+#### Resource Name
 
 The data dictionary is now a separate document in the FAA LAANC Github
 repository. “LAANC (Class) Data Dictionary 2017-02-27.xlsx”
@@ -988,7 +988,7 @@ with one or more sample payloads in each format. If the payloads differ
 significantly across resources, include samples for all such
 resources.&gt;
 
-#### &lt;Sample Payload 1&gt;
+#### Sample Payload
 
 &lt;Sample Payload for the Service in format 1.&gt;
 
@@ -1139,7 +1139,7 @@ endpoints that are used to reference and access the resources.
 &lt;For each base service endpoint, include a subsection below
 describing the endpoint.&gt;
 
-#### &lt;Endpoint 1 Name&gt;
+#### Endpoint 1 Name
 
 &lt;Brief description of endpoint 1.&gt;
 
