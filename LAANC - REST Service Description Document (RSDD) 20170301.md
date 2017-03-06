@@ -176,7 +176,7 @@ Table of Contents
 
 5.1 [A.1 Operator to TPP Proposed Flight Plan](#a1-operator-to-tpp-proposed-flight-plan)
 
-5.2 [A.2 TPP to Operator: Accept/Reject](#a2-tpp-to-operator-accept-reject)
+5.2 [A.2 TPP to Operator: Accept Reject](#a2-tpp-to-operator-accept-reject)
 
 5.3 [A.3 TPP to ATC: Notification](#a3-tpp-to-atc-notification)
 
@@ -1505,7 +1505,7 @@ xsi:type="waiverType"&gt;True&lt;/ns2:operationOverPeople&gt;
 
 &lt;/FlightMessage&gt;
 
-A.2 TPP to Operator: Accept/Reject.
+A.2 TPP to Operator: Accept-Reject.
 -----------------------------------
 
 This message is sent from the TPP to the operator once the TPP has
