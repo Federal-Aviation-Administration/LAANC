@@ -70,55 +70,55 @@ Table of Contents
 
 3.1 [Terms and Definitions](#terms-and-definitions)
 
-3.2 Acronyms 2
+3.2 [Acronyms](#acronyms)
 
-4 Service Properties and Capabilities 3
+4 [Service Properties and Capabilities](#service-properties-and-capabilities)
 
-4.1 Service Profile 3
+4.1 [Service Profile](#service-profile)
 
-4.1.1 Service Properties 3
+4.1.1 [Service Properties](#service-properties)
 
-4.1.2 Service Provider 3
+4.1.2 [Service Provider](#service-provider)
 
-4.1.2.1 Service Points of Contact 4
+4.1.2.1 [Service Points of Contact](#service-points-of-contact)
 
-4.1.3 Service Consumers 4
+4.1.3 [Service Consumers](#service-consumers)
 
-4.1.4 Service Functionality 4
+4.1.4 [Service Functionality](#service-functionality)
 
-4.1.5 Service Security 4
+4.1.5 [Service Security](#service-security)
 
-4.1.6 API Protocol & Webhooks 4
+4.1.6 API [Protocol & Webhooks](#protocol-&-webhooks)
 
-4.1.6.1 API Protocol 4
+4.1.6.1 [API Protocol](#api-protocol)
 
-4.1.6.2 Webhooks 5
+4.1.6.2 [Webhooks](#webhooks)
 
-4.1.7 Message Queuing Protocol 5
+4.1.7 [Message Queuing Protocol](#message-queuing-protocol)
 
-4.1.8 Message Format 6
+4.1.8 [Message Format](#message-format)
 
-4.1.8.1 UASs in FIXM 6
+4.1.8.1 [UASs in FIXM](#uass-in-fixm)
 
-4.1.8.1.1 Data already covered in FIXM 6
+4.1.8.1.1 [Data already covered in FIXM](#data-already-covered-in-fixm)
 
-4.1.8.1.1.1 Operator contact information 6
+4.1.8.1.1.1 [Operator contact information](#operator-contact-information)
 
-4.1.8.1.1.2 Flight plan 7
+4.1.8.1.1.2 [Flight plan](#flight-plan)
 
-4.1.8.1.1.2.1 lat/lon 7
+4.1.8.1.1.2.1 [lat/lon](#lat/lon)
 
-4.1.8.1.1.2.2 Time 8
+4.1.8.1.1.2.2 [Time](#time)
 
-4.1.8.1.1.2.3 Altitude 8
+4.1.8.1.1.2.3 [Altitude](#altitude)
 
-4.1.8.1.1.2.4 Proposal submission date 8
+4.1.8.1.1.2.4 [Proposal submission date](#proposal-submission-date)
 
-4.1.8.1.1.2.5 Proposal (FAA) response time 9
+4.1.8.1.1.2.5 [Proposal (FAA) response time](#proposal-(faa)-response-time)
 
-4.1.8.1.1.2.6 Closest airport 9
+4.1.8.1.1.2.6 [Closest airport](#closest-airport)
 
-4.1.8.1.1.2.7 Flight Plan Version 9
+4.1.8.1.1.2.7 [Flight Plan Version](#flight-plan-version)
 
 4.1.8.1.1.2.8 Proposed Speed 10
 
