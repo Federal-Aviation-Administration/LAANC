@@ -64,11 +64,11 @@ Table of Contents
 
 2.1 [Government Documents](#government-documents)
 
-2.2 Non-Government Standards and Other Publications 2
+2.2 [Non-Government Standards and Other Publications](#non-government-standards-and-other-publications)
 
-3 Definitions 2
+3 [Definitions](#definitions)
 
-3.1 Terms and Definitions 2
+3.1 [Terms and Definitions](#terms-and-definitions)
 
 3.2 Acronyms 2
 
