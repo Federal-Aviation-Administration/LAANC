@@ -389,7 +389,7 @@ service.
 
 Application authentication through OAuth-2.0 (<https://oauth.net/2/>)
 
-### API Protocol & Webhooks
+### API Protocol and Webhooks
 
 #### API Protocol
 
@@ -522,7 +522,7 @@ the FIXM base namespace, and fx refers to the FIXM flight namespace.
 Setting these references can be found in the appendices, where (ns2 =
 fb) and (ns3 = fx).
 
-####### lat-lon
+####### lat lon
 
 []{#_Toc475620574 .anchor}Specify a flight route as a single segment
 with a single point of reference
@@ -575,7 +575,7 @@ level, STD = barometric altitude from standard 1 atm pressure, and W84 =
 height above WGS84 ellipsoid) and uom (Unit Of Measure; can be “FT” or
 “M”) attributes are required.
 
-####### Proposal submission date
+####### Proposal Submission Date
 
 When the proposal was submitted. The accepted class is a receipt that
 the ATC received the proposal.
@@ -592,7 +592,7 @@ Accepted field may be “ACCEPTED”, “REJECTED”, or “MANUAL”. The last
 choice represents a negotiation between the operator and air traffic
 control. The filingTime field must be a datetime object.
 
-####### Proposal (FAA) response time
+####### Proposal FAA Response Time
 
 &lt;fx:flightPlanNegotiationStatus&gt;
 
@@ -615,7 +615,7 @@ air traffic control or a third party provider. If so, then statusReason
 may simply quote the regulations violated by the flight plan, and the
 result will require the operator to submit a revised flight plan.
 
-####### Closest airport
+####### Closest Airport
 
 Use the nearest airport as a reference point in departure aerodrome. We
 assume arrival aerodrome is the same as the departure; only the time
