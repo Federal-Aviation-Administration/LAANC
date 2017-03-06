@@ -176,17 +176,17 @@ Table of Contents
 
 5.1 [A.1 Operator to TPP Proposed Flight Plan](#a1-operator-to-tpp-proposed-flight-plan)
 
-5.2 [A.2 TPP to Operator: Accept/Reject](#a.2-tpp-to-operator-accept-reject)
+5.2 [A.2 TPP to Operator: Accept/Reject](#a2-tpp-to-operator-accept-reject)
 
-5.3 [A.3 TPP to ATC: Notification](#a.3-tpp-to-atc-notification)
+5.3 [A.3 TPP to ATC: Notification](#a3-tpp-to-atc-notification)
 
-5.4 [A.4 TPP to ATC: Authorization Request](#a.4-tpp-to-atc-authorization-request)
+5.4 [A.4 TPP to ATC: Authorization Request](#a4-tpp-to-atc-authorization-request)
 
-5.5 [A.5 ATC to TPP: Accept – Authorization Granted](#a.5-atc-to-tpp-accept-authorization)
+5.5 [A.5 ATC to TPP: Accept – Authorization Granted](#a5-atc-to-tpp-accept-authorization)
 
-5.6 [A.6 ATC to TPP: Reject with Minor Modifications](#a.6-atc-to-tpp-reject-with-minor-modifications)
+5.6 [A.6 ATC to TPP: Reject with Minor Modifications](#a6-atc-to-tpp-reject-with-minor-modifications)
 
-5.7 [A.7 ATC to TPP: Reject](#a.7-atc-to-tpp-reject)
+5.7 [A.7 ATC to TPP: Reject](#a7-atc-to-tpp-reject)
 
 6 [Appendix B Message Collections](#appendix-b-message-collections)
 
