@@ -58,11 +58,11 @@ Table of Contents
 
 1 [Scope](#scope)
 
-1.1 Background 1
+1.1 [Background](#background)
 
-2 Applicable Documents 2
+2 [Applicable Documents](#applicable documents)
 
-2.1 Government Documents 2
+2.1 [Government Documents](#government documents)
 
 2.2 Non-Government Standards and Other Publications 2
 
@@ -208,7 +208,7 @@ provider, and describes in detail the resources that the service can
 access and the RESTful Hypertext Transfer Protocol (HTTP) methods that
 the service supports for each resource.
 
-Background
+## Background
 ----------
 
 The Federal Aviation Administration (FAA) has been tasked with
@@ -254,7 +254,7 @@ denial records to the FAA for FAA display. The TPP will manage Part 107
 operator secondary requests for authorization once automatic denial has
 been provided.
 
-Applicable Documents
+## Applicable Documents
 ====================
 
 The documents or information sources in the following sub-sections are
@@ -275,14 +275,14 @@ relevant to this document:
 
 -   Airman’s Information Manual (AIM)
 
-Government Documents
+## Government Documents
 --------------------
 
 -   &lt;SLA document(s) for the Service, when completed&gt;
 
 -   FAA-STD-066, Web Service Taxonomies
 
-Non-Government Standards and Other Publications
+## Non-Government Standards and Other Publications
 -----------------------------------------------
 
 -   Authentication Protocol: <https://oauth.net/2/>
@@ -293,7 +293,7 @@ Non-Government Standards and Other Publications
 
 -   Message Format: <http://www.json.org/>
 
-Definitions
+## Definitions
 ===========
 
 Terms and Definitions
