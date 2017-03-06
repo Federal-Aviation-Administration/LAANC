@@ -56,7 +56,7 @@ Table of Contents
 
 **and Third Party Providers** i
 
-1 [Scope](#Scope)
+1 [Scope](#scope)
 
 1.1 Background 1
 
@@ -190,7 +190,7 @@ Table of Contents
 
 6 Appendix B Message Collections 30
 
-# Scope
+## Scope
 =====
 
 This REST Service Description Document (RSDD) provides information to
