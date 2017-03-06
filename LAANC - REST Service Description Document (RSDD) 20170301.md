@@ -522,7 +522,7 @@ the FIXM base namespace, and fx refers to the FIXM flight namespace.
 Setting these references can be found in the appendices, where (ns2 =
 fb) and (ns3 = fx).
 
-####### lat/lon
+####### lat-lon
 
 []{#_Toc475620574 .anchor}Specify a flight route as a single segment
 with a single point of reference
