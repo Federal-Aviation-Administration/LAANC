@@ -106,7 +106,7 @@ Table of Contents
 
 4.1.8.1.1.2 [Flight plan](#flight-plan)
 
-4.1.8.1.1.2.1 [lat/lon](#lat/lon)
+4.1.8.1.1.2.1 [lat/lon](#lat-lon)
 
 4.1.8.1.1.2.2 [Time](#time)
 
@@ -114,39 +114,39 @@ Table of Contents
 
 4.1.8.1.1.2.4 [Proposal submission date](#proposal-submission-date)
 
-4.1.8.1.1.2.5 [Proposal (FAA) response time](#proposal-(faa)-response-time)
+4.1.8.1.1.2.5 [Proposal (FAA) response time](#proposal-faa-response-time)
 
 4.1.8.1.1.2.6 [Closest airport](#closest-airport)
 
 4.1.8.1.1.2.7 [Flight Plan Version](#flight-plan-version)
 
-4.1.8.1.1.2.8 Proposed Speed 10
+4.1.8.1.1.2.8 [Proposed Speed](#proposed-speed)
 
-4.1.8.1.1.3 ATC Authorization 10
+4.1.8.1.1.3 [ATC Authorization](#atc-authorization)
 
-4.1.8.1.1.3.1 planningStatus 10
+4.1.8.1.1.3.1 [Planning Status](#planning-status)
 
-4.1.8.1.1.3.2 operationalAcceptability 10
+4.1.8.1.1.3.2 [Operational Acceptability](#operational-acceptability)
 
-4.1.8.1.2 5.2. Data not yet covered in FIXM 11
+4.1.8.1.2 5.2. [Data not yet covered in FIXM](#data-not-yet-covered-in-fixm)
 
-4.1.8.1.2.1 Potential Extensions to FIXM 11
+4.1.8.1.2.1 [Potential Extensions to FIXM](#potential-extensions-to-fixm)
 
-4.1.8.1.2.1.1 Permissions 11
+4.1.8.1.2.1.1 [Permissions](#permissions)
 
-4.1.8.1.2.1.2 UAS operator 12
+4.1.8.1.2.1.2 [UAS operator](#uas operator)
 
-4.1.8.1.2.1.3 airClass 12
+4.1.8.1.2.1.3 [AirClass](#airclass)
 
-4.1.8.1.2.1.4 Flight Radius 13
+4.1.8.1.2.1.4 [Flight Radius](#flight radius)
 
-4.1.8.1.2.1.5 VLOS Indicator 13
+4.1.8.1.2.1.5 [VLOS Indicator](#vlos-indicator)
 
-4.1.8.1.2.1.6 Operation over people indicator 13
+4.1.8.1.2.1.6 [Operation over people indicator](#operation-over-people-indicator)
 
-4.1.9 Qualities of Service 13
+4.1.9 [Qualities of Service](#qualities-of-service)
 
-4.2 Service Interfaces & Data Model 14
+4.2 [Service Interfaces & Data Model](#service-interfaces-&-data-model)
 
 4.2.1 Resources 14
 
