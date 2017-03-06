@@ -88,7 +88,7 @@ Table of Contents
 
 4.1.5 [Service Security](#service-security)
 
-4.1.6 API [Protocol and Webhooks](#protocol-and-webhooks)
+4.1.6 [API Protocol and Webhooks](#api-protocol-and-webhooks)
 
 4.1.6.1 [API Protocol](#api-protocol)
 
@@ -106,17 +106,17 @@ Table of Contents
 
 4.1.8.1.1.2 [Flight plan](#flight-plan)
 
-4.1.8.1.1.2.1 [lat lon](#lat-lon)
+4.1.8.1.1.2.1 [Lat Lon](#lat-lon)
 
 4.1.8.1.1.2.2 [Time](#time)
 
 4.1.8.1.1.2.3 [Altitude](#altitude)
 
-4.1.8.1.1.2.4 [Proposal submission date](#proposal-submission-date)
+4.1.8.1.1.2.4 [Proposal Submission Date](#proposal-submission-date)
 
 4.1.8.1.1.2.5 [Proposal FAA response time](#proposal-faa-response-time)
 
-4.1.8.1.1.2.6 [Closest airport](#closest-airport)
+4.1.8.1.1.2.6 [Closest Airport](#closest-airport)
 
 4.1.8.1.1.2.7 [Flight Plan Version](#flight-plan-version)
 
