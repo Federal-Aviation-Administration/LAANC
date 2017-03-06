@@ -296,7 +296,7 @@ relevant to this document:
 ## Definitions
 ===========
 
-Terms and Definitions
+## Terms and Definitions
 ---------------------
 
   Name           Definition
@@ -304,7 +304,7 @@ Terms and Definitions
   REST Service   A RESTful web service (also known as a RESTful web Application Programming Interface (API)) is a service implemented using HTTP and REST principles.
   Resource       A resource is an individual data entity that is identifiable by a URI.
 
-Acronyms
+## Acronyms
 --------
 
   Name   Full Spelling
@@ -322,10 +322,10 @@ Acronyms
   SSA    Service Security Agreement
   URI    Uniform Resource Identifier
 
-Service Properties and Capabilities
+## Service Properties and Capabilities
 ===================================
 
-Service Profile
+## Service Profile
 ---------------
 
 ### Service Properties
