@@ -60,9 +60,9 @@ Table of Contents
 
 1.1 [Background](#background)
 
-2 [Applicable Documents](#applicable documents)
+2 [Applicable Documents](#applicable-documents)
 
-2.1 [Government Documents](#government documents)
+2.1 [Government Documents](#government-documents)
 
 2.2 Non-Government Standards and Other Publications 2
 
