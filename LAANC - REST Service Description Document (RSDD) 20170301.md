@@ -190,7 +190,7 @@ Table of Contents
 
 6 Appendix B Message Collections 30
 
-## Scope <a name="Scope"></a>
+# Scope
 =====
 
 This REST Service Description Document (RSDD) provides information to
